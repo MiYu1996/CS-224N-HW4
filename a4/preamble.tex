@@ -1,0 +1,102 @@
+\newcommand{\thetop}[5]{
+   \renewcommand{\thepage}{\arabic{page}}
+   \noindent
+   \begin{center}
+   \framebox{
+      \vbox{
+    \hbox to 5.78in {Homework \hfill #2 }
+       \vspace{4mm}
+       \hbox to 5.78in { {\Large \hfill #5  \hfill} }
+       \vspace{2mm}
+       \hbox to 5.78in { {\it #3 \hfill #4} }
+      }
+   }
+   \end{center}
+   \vspace*{4mm}
+}
+
+\newcommand{\lecture}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Lecture #1}}
+\newcommand{\masterfile}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Lectures and Problem Sets #1}}
+\newcommand{\syllabus}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Syllabus #1}}
+\newcommand{\ways}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Ways #1}}
+\newcommand{\week}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{#1}}
+\newcommand{\recitation}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Recitation #1}}
+\newcommand{\notes}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Notes #1}}
+\newcommand{\handout}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Handout #1}}
+\newcommand{\homework}[2]{\thetop{#1}{Name: Mi Yu}{#2}{Stanford 2018}{Homework #1}}
+\newcommand{\midterm}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Midterm! #1}}
+\newcommand{\pmidterm}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Practice Midterm! #1}}
+\newcommand{\final}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Final! #1}}
+\newcommand{\pfinal}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Practice Final! #1}}
+\newcommand{\prachomework}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Practice Homework #1}}
+\newcommand{\quiz}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Quiz #1}}
+\newcommand{\solutionset}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Solution Set #1}}
+\newcommand{\research}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{Research Project #1}}
+\newcommand{\blank}[2]{\thetop{#1}{Name: Mi Yu}{#2}{UCSB 2015}{#1}}
+
+
+\def\squarebox#1{\hbox to #1{\hfill\vbox to #1{\vfill}}}
+\def\qed{\hspace*{\fill}
+        \vbox{\hrule\hbox{\vrule\squarebox{.667em}\vrule}\hrule}}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{question}[theorem]{Question}
+
+
+\newenvironment{cor}[1][Corollary.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{conj}[1][Conjecture.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{solution}[1][Solution.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{construct}[1][Construction.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{defn}[1][Definition.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{thm}[1][Theorem.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{exmps}[1][Examples.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{exmp}[1][Example.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{nonexmp}[1][Nonexample.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{problem}[1][Problem.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{prop}[1][Proposition.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{quest}[1][Question.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{answr}[1][Answer.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{answer}[1][Answer.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{aside}[1][Side note.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{obs}[1][Observation.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{claim}[1][Claim.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{lem}[1][Lemma.]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+
+\def\QQ{\mathbb Q}
+\def\ZZ{\mathbb Z}
+\def\RR{\mathbb R}
+\def\CC{\mathbb C}
+\def\NN{\mathbb N}
+
+\def\from{\gets}
+\def\isin{\subseteq}
+\def\iso{\cong}
+\def\st{\ |\ }
